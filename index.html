@@ -1,0 +1,288 @@
+<!doctype html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta property="og:image" content="/images/AP_RGB.jpg"/>
+
+    <title>AP DataKit - Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="company-name"><a href="https://github.com/associatedpress?q=datakit"><img src="/images/AP.svg" alt="Associated Press Logo"/></a><!--<a href=""><img src="/images/datakitlogo.svg" alt="DataKit Logo"/></a>-->
+          <div class="datakit-name">
+            <h1><strong><a href="http://www.datakit.ap.org">AP DataKit</a></strong></h1>
+          </div>
+        </div>
+        <nav>
+	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+	
+		
+		
+
+		
+		<a href="http://datakit.ap.org/#tutorial
+" class="" >Tutorial</a>
+	
+		
+		
+
+		
+		<a href="http://datakit.ap.org/why.html
+" class="" >Why?</a>
+	
+		
+		
+
+		
+		<a href="https://datakit-project.readthedocs.io/
+" class="" >Docs</a>
+	
+		
+		
+
+		
+		<a href="https://github.com/associatedpress/datakit-core
+" class="" >Github</a>
+	
+</nav>
+
+      </div>
+    </header>
+    <div class="banner">
+  <section>
+    <p>AP DATAKIT</p>
+    <h1>Basic, adaptable project<br>
+      organization</h1>
+    <div id="rectangle">
+    </div>
+    <p>AP DataKit is an open-source command-line tool designed to better structure and manage projects. It makes it easier to standardize and share work among members of your team, and to keep your past projects organized and easily accessible for future reference.
+      <br>
+      <br>
+      AP DataKit works off a basic framework that includes the core product and a few key plugins to help you manage where your data files and code are stored and updated.</p>
+  </section>
+</div>
+<div class="content">
+  <section>
+    <div class="container flex">
+      <div class="text">
+        <h2>Create projects as quickly<br>as news breaks</h2>
+        <p>Using <a href="https://github.com/audreyr/cookiecutter">Cookiecutter</a> templates, projects can be spun up quickly whenever needed.</p>
+      </div>
+      <div class="shell-wrap">
+        <p class="shell-top-bar">terminal</p>
+        <ul class="shell-body flex-child">
+          <li>datakit project create</li>
+          <span>Creating project from template: /Users/lfenn/.cookiecutters/cookiecutter-r-project</span><br>
+          <span>full_name [Larry Fenn]:</span><br>
+          <span>email [lfenn@ap.org]:</span><br>
+          <span>project_name [New Project]: Hudson Helicopter Crash</span><br>
+          <span>project_slug [hudson-helicopter-crash]</span><br>
+          <span>project_short_description [TK: short project description]: Pull FAA data on helicopter crashes</span>
+          <li> cd hudson-helicopter-crash</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container flex">
+      <div class="text">
+        <h2>Simple, adaptable project structure</h2>
+        <p>Keep all parts of a project cleanly separated: data, code, configuration, documentation.</p>
+      </div>
+       <div class="shell-wrap">
+        <p class="shell-top-bar">terminal</p>
+        <ul class="shell-body">
+          <span>├── README.md</span><br>
+          <span>├── analysis</span><br>
+          <span>│   ├── analysis.R</span><br>
+          <span>│   ├── graphs.Rmd</span><br>
+          <span>│   └── story_lines.R</span><br>
+          <span>├── config</span><br>
+          <span>│   └── datakit-data.json</span><br>
+          <span>├── data</span><br>
+          <span>│   ├── manual</span><br>
+          <span>│   ├── processed</span><br>
+          <span>│   └── source</span><br>
+          <span>├── docs</span><br>
+          <span>├── output</span><br>
+          <span>│   └── totals_over_time.csv</span><br>
+          <span>└── trump-counties-employment.Rproj
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container flex">
+      <div class="text">
+        <h2>Integrate with cloud storage<br>and hosting</h2>
+        <p>Automate data and code syncing to take the guesswork out of storage and backup.</p>
+      </div>
+       <div class="shell-wrap">
+        <p class="shell-top-bar">terminal</p>
+        <ul class="shell-body">
+          <li>datakit data push</li>
+          <span>EXECUTING: aws s3 sync --profile default data/ s3://data.ap.org/projects/2019/trump-counties-employment/data/</span><br>
+          <span>upload: data/manual/trumpjobs.sqlite to s3://data.ap.org/projects/2019/trump-counties-employment/data/manual/trumpjobs.sqlite</span><br>
+          <span>upload: data/reports/graphs.html to s3://data.ap.org/projects/2019/trump-counties-employment/data/reports/graphs.html</span><br>
+          <span>upload: data/source/LAUS/laucnty15.xlsx to s3://data.ap.org/projects/2019/trump-counties-employment/data/source/LAUS/laucnty15.xlsx</span><br>
+          <span>upload: data/source/LAUS/laucnty16.xlsx to s3://data.ap.org/projects/2019/trump-counties-employment/data/source/LAUS/laucnty16.xlsx</span><br>
+          <span>upload: data/source/LAUS/laucnty17.xlsx to s3://data.ap.org/projects/2019/trump-counties-employment/data/source/LAUS/laucnty17.xlsx</span><br>
+          <span>upload: data/source/LAUS/laucnty18.xlsx to s3://data.ap.org/projects/2019/trump-counties-employment/data/source/LAUS/laucnty18.xlsx</span>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div style="background:#fff">
+  <section class="tutorial" id="tutorial">
+    <h1>Quickstart installation guide</h1>
+    <p class="subtext">For Python 3. If you do not have Python 3 installed on your machine, <a href="https://www.python.org/downloads/">get the latest version here</a>.</p>
+    <p class="subtext">More detailed installation documents are available <a href="https://datakit-project.readthedocs.io/">here</a>.</p>
+  </section>
+  <br>
+  <br>
+  <section>
+  </section>
+  <section>
+    <div class="container flex">
+      <div class="text">
+        <h2>1. Install datakit-project</h2>
+        <p>This is our most popular plugin and sets you up nicely to use other plugins in the future if you want.</p>
+      </div>
+      <div class="shell-wrap">
+        <p class="shell-top-bar">terminal</p>
+        <ul class="shell-body">
+          <li>pip install datakit-project</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container flex">
+  </div>
+
+  <section>
+    <div class="container flex">
+      <div class="text">
+        <h2>2. Grab a template</h2>
+        <p>The AP has created both a Python and R project structure template:</p>
+        <ul>
+          <li><a href="https://github.com/associatedpress/cookiecutter-python-project">Python project template</a></li>
+          <li><a href="https://github.com/associatedpress/cookiecutter-r-project">R project template</a></li>
+        </ul>
+        <p>If you'd like to customize your own, any valid <a href="https://github.com/audreyr/cookiecutter">Cookiecutter</a> will work.</p>
+      </div>
+      <div class="shell-wrap">
+        <p class="shell-top-bar">terminal</p>
+        <ul class="shell-body">
+          <li>datakit project create -t https://github.com/associatedpress/cookiecutter-r-project.git</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container flex">
+  </div>
+
+  <section>
+    <div class="container flex">
+      <div class="text">
+        <h2>3. Get to work</h2>
+        <p>On the command line, datakit project create will create a project with a standardized file structure.</p>
+      </div>
+      <div class="shell-wrap">
+        <p class="shell-top-bar">terminal</p>
+        <ul class="shell-body">
+          <li>datakit project create</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container flex">
+  </div>
+
+  <section>
+    <div class="container flex">
+      <div class="text">
+        <h2>4. Adapt to your workflow</h2>
+        <p>Additional plugins can help you manage the storage of flat data files, sync your code to GitLab or GitHub and push your output to data.world for sharing. Grab other plugins or develop your own!</p>
+      </div>
+      <div class="shell-wrap">
+        <ul style="list-style-type:none">
+          <li><p><b>Data storage and backup:</b> Amazon S3 sync - <a href="https://datakit-data.readthedocs.io/en/latest/">datakit-data</a></li>
+          <li><p><b>Version control:</b></p>
+              <ul>
+                <li><p>GitHub integration - <a href="https://github.com/associatedpress/datakit-github/">datakit-github</a></p></li>
+                <li><p>GitLab integration - <a href="https://github.com/associatedpress/datakit-gitlab/">datakit-gitlab</a></p></li>
+              </ul>
+          <li><p><b>Publishing shareable output:</b> Data.world - <a href="https://github.com/associatedpress/datakit-dworld/">datakit-dworld</a></p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <section class="bottom-cta">
+    <h2>Better <strong>collaborations</strong>, less mess</h2>
+    <subtext>Questions? Comments? Drop us a line at <a href="mailto:datateam@ap.org?Subject=DataKit" target="_blank">datateam@ap.org</a></subtext>
+    <br>
+    <subtext>More information on the <a href="https://www.ap.org/en-us/formats/data-journalism">AP's data journalism program</a></subtext>
+  </section>
+</div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+          
+          <ul class="footer-links">
+            
+            <li><a href="http://datakit.ap.org/#tutorial
+">
+                Tutorial</a></li>
+            
+          </ul>
+          
+          <ul class="footer-links">
+            
+            <li><a href="http://datakit.ap.org/why.html
+">
+                Why?</a></li>
+            
+          </ul>
+          
+          <ul class="footer-links">
+            
+            <li><a href="https://datakit-project.readthedocs.io/
+">
+                Docs</a></li>
+            
+          </ul>
+          
+          <ul class="footer-links">
+            
+            <li><a href="https://github.com/associatedpress/datakit-core
+">
+                Github</a></li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("open-nav").onclick = function () {
+        document.body.classList.toggle("nav-open");
+        return false;
+      };
+    </script>
+  </body>
+</html>

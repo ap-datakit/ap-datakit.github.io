@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta property="og:image" content="/images/AP_RGB.jpg"/>
+
+    <title>AP DataKit - Why DataKit?</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="company-name"><a href="https://github.com/associatedpress?q=datakit"><img src="/images/AP.svg" alt="Associated Press Logo"/></a><!--<a href=""><img src="/images/datakitlogo.svg" alt="DataKit Logo"/></a>-->
+          <div class="datakit-name">
+            <h1><strong><a href="http://www.datakit.ap.org">AP DataKit</a></strong></h1>
+          </div>
+        </div>
+        <nav>
+	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+	
+		
+		
+
+		
+		<a href="http://datakit.ap.org/#tutorial
+" class="" >Tutorial</a>
+	
+		
+		
+
+		
+		<a href="http://datakit.ap.org/why.html
+" class="" >Why?</a>
+	
+		
+		
+
+		
+		<a href="https://datakit-project.readthedocs.io/
+" class="" >Docs</a>
+	
+		
+		
+
+		
+		<a href="https://github.com/associatedpress/datakit-core
+" class="" >Github</a>
+	
+</nav>
+
+      </div>
+    </header>
+    <div class="content">
+  <section>
+    <div class="container">
+      <div class="text">
+        <h1>Why DataKit?</h1>
+        <p>It's easy to lose track of something when working on multiple stories and projects in a busy newsroom. DataKit aims for two goals:</p>
+        <ul>
+          <li>Automate important-yet-repetitive tasks in data projects, letting reporters cover more ground while maintaining standards of reproducibility.</li>
+          <li>Be customizable enough to accommodate practices in different newsrooms.</li>
+        </ul>
+        <h1>How does the AP use DataKit?</h1>
+        <p>At the AP, the typical data story is powered by DataKit:</p>
+        <ol>
+          <li><code>datakit project create</code></li>
+          <p>All projects have the same, standard overall folder structure. Any new project is created already with places to put interview materials, data files from sources and code files. There is no confusion over which data files are straight from sources and which ones are intermediate work products, or where a particular analysis script is.</p>
+          <li><code>datakit data init</code></li>
+          <p>Data files are synced to Amazon S3 cloud storage. An unwieldy command-line ritual has been boiled down to a single interface for pushing and pulling: <code>datakit data push</code>. The specifics of the S3 sync are stored in the project, allowing collaborators to pull copies of the project with the single command <code>datakit data pull</code>.</p>
+          <li><code>datakit gitlab integrate</code></li>
+          <p>Code is all tracked in version control and hosted on Gitlab. Important analysis code doesn't live on only one computer, and a detailed revision history is now an assumed feature of all projects. The integration automatically creates a project in gitlab, ready for the reporter to push commits. Issues can be quickly filed using <code>gitlab issues add</code> without having to use the web interface.</p>
+          <li><code>datakit dworld create</code>, <code>datakit dworld push</code></li>
+          <p>Data files for distributions are managed through DataKit. This streamlines the process of releasing data files for members while also enforcing specific rules on which files are made public.
+        </ol>
+      </div>
+    </div>
+  </section>
+</div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+          
+          <ul class="footer-links">
+            
+            <li><a href="http://datakit.ap.org/#tutorial
+">
+                Tutorial</a></li>
+            
+          </ul>
+          
+          <ul class="footer-links">
+            
+            <li><a href="http://datakit.ap.org/why.html
+">
+                Why?</a></li>
+            
+          </ul>
+          
+          <ul class="footer-links">
+            
+            <li><a href="https://datakit-project.readthedocs.io/
+">
+                Docs</a></li>
+            
+          </ul>
+          
+          <ul class="footer-links">
+            
+            <li><a href="https://github.com/associatedpress/datakit-core
+">
+                Github</a></li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("open-nav").onclick = function () {
+        document.body.classList.toggle("nav-open");
+        return false;
+      };
+    </script>
+  </body>
+</html>
