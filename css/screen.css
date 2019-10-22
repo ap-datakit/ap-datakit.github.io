@@ -389,8 +389,8 @@ footer {
   padding: 30px 0 10px 0;
   font-size: 1.1em;
   position: relative;
-  background: #382C4B;
-  color: #fff;
+  background: #2c2c2c;
+  color: #ececeb;
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto; }
@@ -402,7 +402,7 @@ footer {
         text-align: center; } }
   footer,
   footer a {
-    color: #b1aaa8; }
+    color: #ececeb; }
   footer .footer-columns {
     -webkit-flex-flow: wrap;
     -moz-flex-flow: wrap;
@@ -414,9 +414,8 @@ footer {
     footer a:hover {
       color: #fff; }
   footer .legal-line {
-    width: 100%;
-    padding: 30px 0;
-    margin: 0;
-    background-color: #222527; }
-    footer .legal-line a {
-      font-weight: 600; }
+    padding: 0px 30px; }
+
+.legal li {
+  margin: 10px;
+  display: inline; }
