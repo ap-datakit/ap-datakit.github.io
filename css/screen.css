@@ -6,15 +6,15 @@ footer .footer-columns {
   display: flex; }
 
 @font-face {
-  font-family: GoodBook;
-  src: url("/fonts/GoodWeb-Book.eot");
-  src: url("/fonts/GoodWeb-Book.woff") format("woff");
-  src: url("/fonts/GoodComp-Book.ttf") format("truetype"); }
+  font-family: "AP";
+  src: url("/fonts/ap_var.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 1000;
+  font-stretch: 25% 151%; }
 @font-face {
-  font-family: GoodBookCond;
-  src: url("/fonts/GoodWeb-CondBook.eot");
-  src: url("/fonts/GoodWeb-CondBook.woff") format("woff");
-  src: url("/fonts/GoodComp-CondBook.ttf") format("truetype"); }
+  font-family: "AP Italic";
+  src: url("/fonts/ap_italic.woff2") format("woff2");
+  font-style: italic; }
 html {
   background: #ececec; }
 
@@ -23,7 +23,10 @@ html, body {
   padding: 0; }
 
 body {
-  font-family: "GoodBook", Fallback, sans-serif; }
+  font-family: "AP", Fallback, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.55; }
 
 #rectangle {
   margin-top: 15px;
@@ -44,16 +47,20 @@ h1 strong, h2 strong {
   font-weight: 700; }
 
 h1 {
-  font-weight: 300;
-  font-size: 2.3em;
   margin: 0; }
 
 h2 {
-  font-weight: 300;
-  font-size: 2.2em;
-  margin: 20px 0 20px 0; }
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  letter-spacing: -0.018rem;
+  font-stretch: 75%; }
 
 h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  font-stretch: 90%;
   margin: 20px 0 10px 0; }
 
 p, address, .text li {
@@ -105,8 +112,11 @@ code {
   .banner h1 {
     margin-left: 70px;
     color: #fff;
-    font-family: "GoodBookCond", Fallback, sans-serif;
-    font-size: 4.3em; }
+    font-family: "AP", Fallback, sans-serif;
+    font-size: 4.3em;
+    font-weight: 750;
+    letter-spacing: -0.026rem;
+    font-stretch: 75%; }
 
 .tutorial {
   background: #fff;
@@ -124,7 +134,7 @@ code {
   .tutorial h1 {
     text-align: center;
     color: #000;
-    font-family: "GoodBookCond", Fallback, sans-serif;
+    font-family: "AP", Fallback, sans-serif;
     font-size: 4.3em; }
 
 .users {
@@ -193,9 +203,13 @@ header {
     header a:hover {
       text-decoration: none; }
   header .company-name {
-    font-family: "GoodBookCond", Fallback, sans-serif;
-    font-size: 1em;
-    line-height: 0; }
+    font-family: "AP", Fallback, sans-serif;
+    font-family: var(--ap-var, "AP Var"), Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    font-stretch: 50%; }
     header .company-name a {
       display: inline-block; }
     header .company-name img {
@@ -323,7 +337,9 @@ section + section {
 
 nav {
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 1.125rem;
+  font-weight: 550;
+  line-height: 1rem;
   width: 100%;
   position: absolute;
   right: 0px;
